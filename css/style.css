@@ -1,0 +1,325 @@
+@font-face {
+    font-family: GAGA;
+    src: url(../fonts/LICENSE\ PLATE\ USA.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: fuchsia;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-family: GAGA;
+}
+
+.logo{
+    color: white;
+    text-shadow: 0 0 5px #000;
+}
+
+.logo span{
+    color: #000;
+}
+
+.menu { 
+    cursor: pointer;
+}
+
+main {
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-image: url(../img/BANNER.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.call {
+    width: 70%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    background-color: #0000007f;
+    color: #fff;
+    font-family: GAGA;
+    float: left;
+}
+
+h1 {
+    color: fuchsia;
+    text-shadow: 0 0 5px #000;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.call p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.call a {
+    background-color: fuchsia;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.call a:hover { 
+    background-color: #333;
+}
+
+.nosotros {
+    background-color: #333;
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.nleft {
+    width: 50%;
+    background-image: url(../img/reinonmi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nright {
+    width: 50%;
+    padding: 30px;
+    font-family: GAGA;
+    text-align: center;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.nright h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: GAGA;
+    margin-bottom: 25px;
+}
+
+.nright a{
+    color: #fff;
+    background-color: fuchsia;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: 0 0 5px #000;
+}
+
+.nright p {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 25px
+}
+
+.galeria {
+    width: 100%;
+    height: 500px;
+    background-color: palevioletred;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    padding: 20px;
+    grid-gap: 15px;
+}
+
+h2 {
+    text-align: center;
+    background-color: fuchsia;
+    color: #000;
+    text-shadow: 0 0 5px #000;
+    font-family: GAGA;
+    font-size: 35px;
+    padding: 15px;
+}
+
+.img {
+    background-color: red;
+    border: 2px solid #000;
+    background-size: cover;
+    background-position: center;
+    filter: sepia(100%);
+}
+
+.img:hover{
+    transform: scale(1.05);
+    transition: all 0.9s;
+    filter: sepia(0%);
+}
+
+.img1 {
+    background-image: url(../img/banner2.jpg);
+}
+
+.img2 {
+    background-image: url(../img/003_final_artwork.jpg);
+}
+
+.img3 {
+    background-image: url(../img/004.jpg);
+    background-position: top;
+}
+
+.img4 {
+    background-image: url(../img/cunt.jpg);
+    background-position: top;
+}
+
+.img5 {
+    background-image: url(../img/reinonmi.jpg);
+}
+
+.img6 {
+    background-image: url(../img/b7090791013e86ae73cce785246d7a53.jpg);
+}
+
+.img7 {
+    background-image: url(../img/015.jpg);
+    background-position: top;
+}
+
+.img8 {
+    background-image: url(../img/017.jpg);
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: GAGA;
+    padding: 20px;
+}
+
+footer i {
+    font-size: 40px;
+    letter-spacing: 20px;
+}
+
+footer i:hover {
+    color: fuchsia;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+    .nosotros {
+        display: flex;
+    }
+    .nleft {
+        width: 50%;
+    }
+    .nright {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+    .img1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .img2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .img3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .img4{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .img5{
+        grid-column: 1/3;
+        grid-row: 3/4
+    }
+    .img6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .img7{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .img8{
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 200px)
+    }
+}
+
+.container-fluid {
+    background-color: #7dfffc;
+}
+
+.header {
+    border: 5px solid #000;
+    height: 120px;
+}
+
+.main {
+    background-color: darkorange;
+    border: 5px solid #000;
+    height: 300px;
+}
+.aside {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    text-emphasis-color: white;
+    border: 5px solid #000;
+    height: 300px;
+    font-family: GAGA;
+    padding: 50px;
+    background-image: url(../img/015.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.article {
+    background-color: #feff50;
+    border: 5px solid #000;
+    height: 300px;
+}
+.footer {
+    background-color: #ea4171;
+    border: 5px solid #000;
+    height: 300px;
+}
+
+.homehaus {
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+}
+
+.homehaus:visited {
+    color: black
+}
